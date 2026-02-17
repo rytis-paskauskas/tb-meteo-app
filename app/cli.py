@@ -146,7 +146,7 @@ def main():
             r_mm = [0.01*(t['rc'] + t['rcc']) for t in _tmp]
             for t in r_mm:
                 t.name = 'rainfall'
-            breakpoint()
+            # breakpoint()
             # 10 minute to 1 hour sampling
             # resamp = [t.resample(item['resampling_frequency'],label='right', closed='right').sum(min_count=6) for t in r_mm]
             # result = pd.concat(resamp).dropna()
@@ -155,9 +155,9 @@ def main():
             result.index = result.index.tz_localize('UTC').tz_convert(config['timezone'])
             export_csv(result, args.out)
 
-        breakpoint()
+        # breakpoint()
     except ApiException as e:
-        breakpoint()
+        # breakpoint()
         if e.status == 500:
             print(e.reason)
             print(f"Try requesting fewer data (current request = {days} days")
