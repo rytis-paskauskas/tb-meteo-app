@@ -6,7 +6,6 @@ import pandas as pd
 from pandas.core.generic import ExponentialMovingWindow
 from .config import configure, load_config
 from .identifiers import VALID_IDENTIFIERS
-#from .tb_client import fetch_data
 from .exporter import export_csv
 from tb_rest_client.rest_client_ce import RestClientCE, EntityId
 from tb_rest_client.rest import ApiException
