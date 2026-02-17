@@ -1,0 +1,23 @@
+[project]
+name = "tb-meteo-app"
+version = "0.1.0"
+description = "CLI tool for downloading and resampling Thingsboard meteorological time series"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "meteoresampler",
+    "pandas>=2.2",
+    # "pytz>=2025.2",
+    "tb-rest-client",
+]
+
+[tool.uv.sources]
+tb-rest-client = { git = "https://github.com/thingsboard/thingsboard-python-rest-client.git" }
+meteoresampler = { git = "https://github.com/rytis-paskauskas/MeteoResampler.git" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.15.1",
+]

@@ -1,0 +1,4 @@
+meteoresampler @ git+https://github.com/rytis-paskauskas/MeteoResampler.git@e4d18527bb9f84cfd76db8ab67ff3682cc54f9e1
+numpy==2.4.2
+pandas==3.0.0
+tb-rest-client @ git+https://github.com/thingsboard/thingsboard-python-rest-client.git@9cb94965b14f27ea313fd76ddcbcb0034a4288e4
