@@ -68,10 +68,7 @@ def main():
     # Parse datetimes
     beg_dt = _parse_datetime(args.start)
     end_dt = _parse_datetime(args.end)
-    print(f"start={beg_dt}")
-    print(f"end={end_dt}")
     days = (end_dt - beg_dt).days
-    print(f"days={days}")
     
     if beg_dt >= end_dt:
         parser.error("--start must be earlier than --end.")

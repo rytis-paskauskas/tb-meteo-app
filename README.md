@@ -1,5 +1,5 @@
 # tb-meteo-app 
-Command-line tool for extracting meteorological data from a ThingsBoard instance and exporting it to CSV. This tool:
+Command-line tool for downloading meteorological time series from a ThingsBoard instance and exporting it to CSV. This tool:
 
 - Connects to a ThingsBoard REST API
 - Fetches telemetry for predefined identifiers (devices/assets)
