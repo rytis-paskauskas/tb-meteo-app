@@ -77,7 +77,6 @@ def main():
 
     beg_ts = pd.Timestamp(beg_dt).tz_localize(config['timezone']).tz_convert("UTC").timestamp()
     end_ts = pd.Timestamp(end_dt).tz_localize(config['timezone']).tz_convert("UTC").timestamp()
-    breakpoint()
     item = VALID_IDENTIFIERS[args.identifier]
     entity = EntityId(item['device_id'], item['device_type'])
     tb_opts = {'limit': (1+days)*144, 'order_by': 'ASC', 'use_strict_data_types': True}
