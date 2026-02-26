@@ -12,8 +12,8 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-tb-rest-client = { git = "https://github.com/thingsboard/thingsboard-python-rest-client.git" }
-meteoresampler = { git = "https://github.com/rytis-paskauskas/MeteoResampler.git" }
+tb-rest-client = { git = "https://github.com/thingsboard/thingsboard-python-rest-client.git"}
+meteoresampler = { git = "https://github.com/rytis-paskauskas/MeteoResampler.git", tag = "v0.1.0"}
 
 [dependency-groups]
 dev = [
